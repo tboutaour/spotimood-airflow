@@ -2251,3 +2251,699 @@ Traceback (most recent call last):
 KeyError: 'Variable postgresql_jar_gcp_path does not exist'
 [2021-04-20 17:33:16,578] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
 [2021-04-20 17:33:16,586] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.608 seconds
+[2021-04-20 17:33:46,673] {scheduler_job.py:182} INFO - Started process (PID=308) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:33:46,677] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:33:46,678] {logging_mixin.py:104} INFO - [2021-04-20 17:33:46,678] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:33:47,237] {logging_mixin.py:104} INFO - [2021-04-20 17:33:47,234] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:33:47,241] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:33:47,247] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.578 seconds
+[2021-04-20 17:34:17,348] {scheduler_job.py:182} INFO - Started process (PID=310) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:34:17,355] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:34:17,358] {logging_mixin.py:104} INFO - [2021-04-20 17:34:17,357] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:34:18,114] {logging_mixin.py:104} INFO - [2021-04-20 17:34:18,109] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:34:18,118] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:34:18,129] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.801 seconds
+[2021-04-20 17:34:48,749] {scheduler_job.py:182} INFO - Started process (PID=312) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:34:48,759] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:34:48,760] {logging_mixin.py:104} INFO - [2021-04-20 17:34:48,760] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:34:49,511] {logging_mixin.py:104} INFO - [2021-04-20 17:34:49,505] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:34:49,514] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:34:49,526] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.783 seconds
+[2021-04-20 17:35:19,653] {scheduler_job.py:182} INFO - Started process (PID=314) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:35:19,657] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:35:19,659] {logging_mixin.py:104} INFO - [2021-04-20 17:35:19,659] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:35:20,560] {logging_mixin.py:104} INFO - [2021-04-20 17:35:20,555] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:35:20,562] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:35:20,572] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.926 seconds
+[2021-04-20 17:35:50,745] {scheduler_job.py:182} INFO - Started process (PID=316) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:35:50,750] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:35:50,754] {logging_mixin.py:104} INFO - [2021-04-20 17:35:50,754] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:35:51,675] {logging_mixin.py:104} INFO - [2021-04-20 17:35:51,663] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:35:51,686] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:35:51,740] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.998 seconds
+[2021-04-20 17:36:21,854] {scheduler_job.py:182} INFO - Started process (PID=318) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:36:21,859] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:36:21,863] {logging_mixin.py:104} INFO - [2021-04-20 17:36:21,863] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:36:22,509] {logging_mixin.py:104} INFO - [2021-04-20 17:36:22,503] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:36:22,513] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:36:22,526] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.685 seconds
+[2021-04-20 17:36:52,646] {scheduler_job.py:182} INFO - Started process (PID=319) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:36:52,650] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:36:52,652] {logging_mixin.py:104} INFO - [2021-04-20 17:36:52,652] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:36:53,492] {logging_mixin.py:104} INFO - [2021-04-20 17:36:53,486] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:36:53,498] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:36:53,510] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.871 seconds
+[2021-04-20 17:37:25,461] {scheduler_job.py:182} INFO - Started process (PID=322) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:37:25,479] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:37:25,500] {logging_mixin.py:104} INFO - [2021-04-20 17:37:25,499] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:37:29,576] {logging_mixin.py:104} INFO - [2021-04-20 17:37:29,559] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:37:29,596] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:37:29,627] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 4.295 seconds
+[2021-04-20 17:37:59,932] {scheduler_job.py:182} INFO - Started process (PID=324) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:37:59,936] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:37:59,938] {logging_mixin.py:104} INFO - [2021-04-20 17:37:59,938] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:38:00,664] {logging_mixin.py:104} INFO - [2021-04-20 17:38:00,661] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:38:00,667] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:38:00,673] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.750 seconds
+[2021-04-20 17:38:31,578] {scheduler_job.py:182} INFO - Started process (PID=326) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:38:31,588] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:38:31,600] {logging_mixin.py:104} INFO - [2021-04-20 17:38:31,600] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:38:33,331] {logging_mixin.py:104} INFO - [2021-04-20 17:38:33,323] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:38:33,340] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:38:33,403] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.848 seconds
+[2021-04-20 17:39:03,775] {scheduler_job.py:182} INFO - Started process (PID=328) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:39:03,778] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:39:03,783] {logging_mixin.py:104} INFO - [2021-04-20 17:39:03,783] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:39:04,498] {logging_mixin.py:104} INFO - [2021-04-20 17:39:04,492] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:39:04,502] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:39:04,512] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.742 seconds
+[2021-04-20 17:39:34,622] {scheduler_job.py:182} INFO - Started process (PID=329) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:39:34,626] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:39:34,628] {logging_mixin.py:104} INFO - [2021-04-20 17:39:34,628] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:39:35,330] {logging_mixin.py:104} INFO - [2021-04-20 17:39:35,326] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:39:35,332] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:39:35,343] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.725 seconds
+[2021-04-20 17:40:05,446] {scheduler_job.py:182} INFO - Started process (PID=331) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:40:05,449] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:40:05,452] {logging_mixin.py:104} INFO - [2021-04-20 17:40:05,451] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:40:06,016] {logging_mixin.py:104} INFO - [2021-04-20 17:40:06,014] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:40:06,018] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:40:06,026] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.584 seconds
+[2021-04-20 17:40:36,142] {scheduler_job.py:182} INFO - Started process (PID=333) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:40:36,145] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:40:36,147] {logging_mixin.py:104} INFO - [2021-04-20 17:40:36,147] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:40:36,723] {logging_mixin.py:104} INFO - [2021-04-20 17:40:36,719] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:40:36,727] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:40:36,735] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.598 seconds
+[2021-04-20 17:41:06,874] {scheduler_job.py:182} INFO - Started process (PID=335) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:41:06,879] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:41:06,882] {logging_mixin.py:104} INFO - [2021-04-20 17:41:06,882] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:41:08,437] {logging_mixin.py:104} INFO - [2021-04-20 17:41:08,426] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:41:08,441] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:41:08,456] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.627 seconds
+[2021-04-20 17:41:38,610] {scheduler_job.py:182} INFO - Started process (PID=338) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:41:38,613] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:41:38,615] {logging_mixin.py:104} INFO - [2021-04-20 17:41:38,615] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:41:39,175] {logging_mixin.py:104} INFO - [2021-04-20 17:41:39,172] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:41:39,178] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:41:39,185] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.581 seconds
+[2021-04-20 17:42:09,294] {scheduler_job.py:182} INFO - Started process (PID=340) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:42:09,297] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:42:09,299] {logging_mixin.py:104} INFO - [2021-04-20 17:42:09,299] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:42:09,854] {logging_mixin.py:104} INFO - [2021-04-20 17:42:09,851] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:42:09,857] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:42:09,866] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.578 seconds
+[2021-04-20 17:42:39,992] {scheduler_job.py:182} INFO - Started process (PID=342) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:42:39,997] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:42:40,000] {logging_mixin.py:104} INFO - [2021-04-20 17:42:40,000] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:42:40,606] {logging_mixin.py:104} INFO - [2021-04-20 17:42:40,601] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:42:40,609] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:42:40,623] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.638 seconds
+[2021-04-20 17:43:10,749] {scheduler_job.py:182} INFO - Started process (PID=344) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:43:10,757] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:43:10,759] {logging_mixin.py:104} INFO - [2021-04-20 17:43:10,759] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:43:11,349] {logging_mixin.py:104} INFO - [2021-04-20 17:43:11,345] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:43:11,352] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:43:11,363] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.619 seconds
+[2021-04-20 17:43:41,477] {scheduler_job.py:182} INFO - Started process (PID=346) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:43:41,479] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:43:41,481] {logging_mixin.py:104} INFO - [2021-04-20 17:43:41,481] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:43:42,067] {logging_mixin.py:104} INFO - [2021-04-20 17:43:42,062] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:43:42,071] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:43:42,083] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.611 seconds
+[2021-04-20 17:44:12,192] {scheduler_job.py:182} INFO - Started process (PID=348) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:44:12,196] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:44:12,200] {logging_mixin.py:104} INFO - [2021-04-20 17:44:12,199] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:44:12,780] {logging_mixin.py:104} INFO - [2021-04-20 17:44:12,776] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:44:12,783] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:44:12,795] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.608 seconds
+[2021-04-20 17:44:42,905] {scheduler_job.py:182} INFO - Started process (PID=350) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:44:42,910] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:44:42,913] {logging_mixin.py:104} INFO - [2021-04-20 17:44:42,913] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:44:43,525] {logging_mixin.py:104} INFO - [2021-04-20 17:44:43,519] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:44:43,529] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:44:43,537] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.637 seconds
+[2021-04-20 17:45:13,649] {scheduler_job.py:182} INFO - Started process (PID=352) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:45:13,657] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:45:13,659] {logging_mixin.py:104} INFO - [2021-04-20 17:45:13,659] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:45:14,325] {logging_mixin.py:104} INFO - [2021-04-20 17:45:14,322] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:45:14,327] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:45:14,334] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.689 seconds
+[2021-04-20 17:45:44,411] {scheduler_job.py:182} INFO - Started process (PID=354) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:45:44,415] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:45:44,418] {logging_mixin.py:104} INFO - [2021-04-20 17:45:44,418] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:45:45,089] {logging_mixin.py:104} INFO - [2021-04-20 17:45:45,084] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:45:45,092] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:45:45,103] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.696 seconds
+[2021-04-20 17:46:15,265] {scheduler_job.py:182} INFO - Started process (PID=356) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:46:15,271] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:46:15,274] {logging_mixin.py:104} INFO - [2021-04-20 17:46:15,274] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:46:16,282] {logging_mixin.py:104} INFO - [2021-04-20 17:46:16,279] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:46:16,288] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:46:16,299] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.045 seconds
+[2021-04-20 17:46:46,497] {scheduler_job.py:182} INFO - Started process (PID=358) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:46:46,500] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:46:46,505] {logging_mixin.py:104} INFO - [2021-04-20 17:46:46,505] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:46:47,151] {logging_mixin.py:104} INFO - [2021-04-20 17:46:47,147] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:46:47,158] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:46:47,166] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.674 seconds
+[2021-04-20 17:47:17,324] {scheduler_job.py:182} INFO - Started process (PID=360) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:47:17,327] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:47:17,329] {logging_mixin.py:104} INFO - [2021-04-20 17:47:17,329] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:47:18,100] {logging_mixin.py:104} INFO - [2021-04-20 17:47:18,096] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:47:18,108] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:47:18,119] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.800 seconds
+[2021-04-20 17:47:48,444] {scheduler_job.py:182} INFO - Started process (PID=362) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:47:48,588] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:47:48,592] {logging_mixin.py:104} INFO - [2021-04-20 17:47:48,591] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:47:59,527] {logging_mixin.py:104} INFO - [2021-04-20 17:47:59,512] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:47:59,532] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:47:59,552] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 11.115 seconds
+[2021-04-20 17:48:29,780] {scheduler_job.py:182} INFO - Started process (PID=364) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:48:29,792] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:48:29,796] {logging_mixin.py:104} INFO - [2021-04-20 17:48:29,796] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:48:31,313] {logging_mixin.py:104} INFO - [2021-04-20 17:48:31,306] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:48:31,317] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:48:31,337] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.566 seconds
+[2021-04-20 17:49:01,550] {scheduler_job.py:182} INFO - Started process (PID=366) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:49:01,559] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:49:01,563] {logging_mixin.py:104} INFO - [2021-04-20 17:49:01,562] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:49:02,391] {logging_mixin.py:104} INFO - [2021-04-20 17:49:02,385] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:49:02,396] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:49:02,412] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.869 seconds
+[2021-04-20 17:49:32,517] {scheduler_job.py:182} INFO - Started process (PID=368) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:49:32,523] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:49:32,525] {logging_mixin.py:104} INFO - [2021-04-20 17:49:32,525] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:49:33,926] {logging_mixin.py:104} INFO - [2021-04-20 17:49:33,921] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:49:33,932] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:49:33,949] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.439 seconds
+[2021-04-20 17:50:04,116] {scheduler_job.py:182} INFO - Started process (PID=370) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:50:04,120] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:50:04,123] {logging_mixin.py:104} INFO - [2021-04-20 17:50:04,122] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:50:04,775] {logging_mixin.py:104} INFO - [2021-04-20 17:50:04,768] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:50:04,779] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:50:04,792] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.682 seconds
+[2021-04-20 17:50:34,892] {scheduler_job.py:182} INFO - Started process (PID=372) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:50:34,897] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:50:34,900] {logging_mixin.py:104} INFO - [2021-04-20 17:50:34,900] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:50:35,582] {logging_mixin.py:104} INFO - [2021-04-20 17:50:35,577] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 20, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:50:35,585] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:50:35,598] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.715 seconds
+[2021-04-20 17:51:05,816] {scheduler_job.py:182} INFO - Started process (PID=374) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:51:05,821] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:51:05,826] {logging_mixin.py:104} INFO - [2021-04-20 17:51:05,826] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:51:06,843] {logging_mixin.py:104} INFO - [2021-04-20 17:51:06,837] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 23, in <module>
+    MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable master_machine_type_aval does not exist'
+[2021-04-20 17:51:06,846] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:51:06,860] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.054 seconds
+[2021-04-20 17:51:37,132] {scheduler_job.py:182} INFO - Started process (PID=376) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:51:37,134] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:51:37,137] {logging_mixin.py:104} INFO - [2021-04-20 17:51:37,137] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:51:37,872] {logging_mixin.py:104} INFO - [2021-04-20 17:51:37,868] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 23, in <module>
+    MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable master_machine_type_aval does not exist'
+[2021-04-20 17:51:37,877] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:51:37,887] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.801 seconds
+[2021-04-20 17:52:08,006] {scheduler_job.py:182} INFO - Started process (PID=377) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:52:08,011] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:52:08,015] {logging_mixin.py:104} INFO - [2021-04-20 17:52:08,015] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:52:08,813] {logging_mixin.py:104} INFO - [2021-04-20 17:52:08,804] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 15, in <module>
+    GCS_APP_BUCKET = Variable.get('gcs_app_bucket')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_app_bucket does not exist'
+[2021-04-20 17:52:08,817] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:52:08,831] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.831 seconds
+[2021-04-20 17:52:39,014] {scheduler_job.py:182} INFO - Started process (PID=380) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:52:39,021] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:52:39,029] {logging_mixin.py:104} INFO - [2021-04-20 17:52:39,029] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:52:40,050] {logging_mixin.py:104} INFO - [2021-04-20 17:52:40,044] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 23, in <module>
+    MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable master_machine_type_aval does not exist'
+[2021-04-20 17:52:40,054] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:52:40,068] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.059 seconds
+[2021-04-20 17:53:10,139] {scheduler_job.py:182} INFO - Started process (PID=382) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:53:10,145] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:53:10,148] {logging_mixin.py:104} INFO - [2021-04-20 17:53:10,147] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:53:11,413] {logging_mixin.py:104} INFO - [2021-04-20 17:53:11,408] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 23, in <module>
+    MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable master_machine_type_aval does not exist'
+[2021-04-20 17:53:11,417] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:53:11,429] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.298 seconds
+[2021-04-20 17:53:41,564] {scheduler_job.py:182} INFO - Started process (PID=384) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:53:41,567] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:53:41,570] {logging_mixin.py:104} INFO - [2021-04-20 17:53:41,569] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:53:42,528] {logging_mixin.py:104} INFO - [2021-04-20 17:53:42,524] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 23, in <module>
+    MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable master_machine_type_aval does not exist'
+[2021-04-20 17:53:42,531] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:53:42,542] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.985 seconds
+[2021-04-20 17:54:12,658] {scheduler_job.py:182} INFO - Started process (PID=386) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:54:12,663] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:54:12,666] {logging_mixin.py:104} INFO - [2021-04-20 17:54:12,666] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:54:13,489] {logging_mixin.py:104} INFO - [2021-04-20 17:54:13,486] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 23, in <module>
+    MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable master_machine_type_aval does not exist'
+[2021-04-20 17:54:13,493] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:54:13,502] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.851 seconds
+[2021-04-20 17:54:43,640] {scheduler_job.py:182} INFO - Started process (PID=388) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:54:43,644] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:54:43,646] {logging_mixin.py:104} INFO - [2021-04-20 17:54:43,646] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:54:44,568] {logging_mixin.py:104} INFO - [2021-04-20 17:54:44,559] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 23, in <module>
+    MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable master_machine_type_aval does not exist'
+[2021-04-20 17:54:44,574] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:54:44,604] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.970 seconds
+[2021-04-20 17:55:14,814] {scheduler_job.py:182} INFO - Started process (PID=390) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:55:14,818] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:55:14,820] {logging_mixin.py:104} INFO - [2021-04-20 17:55:14,819] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:55:15,754] {logging_mixin.py:104} INFO - [2021-04-20 17:55:15,749] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 55, in <module>
+    GCS_TEMP_CHECKPOINT = Variable.get("gcs_temp_checkpoint")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_temp_checkpoint does not exist'
+[2021-04-20 17:55:15,759] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:55:15,766] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.958 seconds
+[2021-04-20 17:55:45,979] {scheduler_job.py:182} INFO - Started process (PID=392) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:55:45,982] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:55:45,986] {logging_mixin.py:104} INFO - [2021-04-20 17:55:45,986] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:55:46,834] {logging_mixin.py:104} INFO - [2021-04-20 17:55:46,829] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/recent_played_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/recent_played_ingestion.py", line 55, in <module>
+    GCS_TEMP_CHECKPOINT = Variable.get("gcs_temp_checkpoint")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_temp_checkpoint does not exist'
+[2021-04-20 17:55:46,839] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:55:46,849] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 0.876 seconds
+[2021-04-20 17:56:17,083] {scheduler_job.py:182} INFO - Started process (PID=394) to work on /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:56:17,087] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/recent_played_ingestion.py for tasks to queue
+[2021-04-20 17:56:17,090] {logging_mixin.py:104} INFO - [2021-04-20 17:56:17,090] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:56:18,416] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-20 17:56:18,487] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['recent_played_ingestion']) retrieved from /opt/airflow/dags/recent_played_ingestion.py
+[2021-04-20 17:56:18,508] {logging_mixin.py:104} INFO - [2021-04-20 17:56:18,507] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-20 17:56:18,529] {logging_mixin.py:104} INFO - [2021-04-20 17:56:18,529] {dag.py:2273} INFO - Setting next_dagrun for recent_played_ingestion to 2021-01-31T00:00:00+00:00
+[2021-04-20 17:56:18,556] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/recent_played_ingestion.py took 1.485 seconds

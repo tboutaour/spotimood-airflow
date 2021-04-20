@@ -2,55 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acadf845-0186-4fb3-a751-75eb0543268b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spotify-mood-airflow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/variables-dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dags/daily_playlist_ingestion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dags/recent_played_ingestion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/daily_playlist_ingestion.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_bash_operator.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_branch_operator.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_branch_python_dop_operator_3.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_complex.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_dag_decorator.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_external_task_marker_dag.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_kubernetes_executor.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_kubernetes_executor_config.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_latest_only.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_latest_only_with_trigger.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_nested_branch_dag.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_passing_params_via_test_command.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_python_operator.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_short_circuit_operator.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_skip_dag.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_subdag_operator.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_task_group.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_trigger_controller_dag.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_trigger_target_dag.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_xcom.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/example_xcomargs.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/subdags/subdag.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/test_utils.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/tutorial.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/tutorial_etl_dag.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/native_dags/example_dags/tutorial_taskflow_api_etl.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-18/recent_played_ingestion.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-20/daily_playlist_ingestion.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-20/recent_played_ingestion.py.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/scheduler/latest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/operators/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/operators/patched_dataproc_delete_cluster_operator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/variables-dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/variables-dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/daily_playlist_ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/daily_playlist_ingestion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/recent_played_ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/recent_played_ingestion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2021-04-20/daily_playlist_ingestion.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-20/daily_playlist_ingestion.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2021-04-20/recent_played_ingestion.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/scheduler/2021-04-20/recent_played_ingestion.py.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +69,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

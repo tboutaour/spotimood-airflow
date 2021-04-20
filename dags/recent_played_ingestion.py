@@ -20,9 +20,9 @@ GCS_LANDING_BUCKET = Variable.get('gcs_landing_bucket')
 GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
 
 # Configuration for cluster
-MASTER_MACHINE_TYPE = Variable.get('master_machine_type_aval')
-WORKER_MACHINE_TYPE = Variable.get('worker_machine_type_aval')
-NUM_WORKERS = int(Variable.get("num_workers_aval"))
+MASTER_MACHINE_TYPE = Variable.get('master_machine_type')
+WORKER_MACHINE_TYPE = Variable.get('worker_machine_type')
+NUM_WORKERS = int(Variable.get("num_workers"))
 CLUSTER_NAME = f'ephemeral-recent-played-spark-cluster-{EXECUTION_DATE_NODASH}'
 
 PYSPARK_JOB = 'gs://' + GCS_APP_BUCKET + '/driver.py'
@@ -44,15 +44,15 @@ dag = DAG(
     max_active_runs=1
 )
 
-POSTGRES_BACKEND_HOST = Variable.get("POSTGRES_BACKEND_HOST")
-POSTGRES_BACKEND_DATABASE = Variable.get("POSTGRES_BACKEND_DATABASE")
-POSTGRES_BACKEND_PORT = Variable.get("POSTGRES_BACKEND_PORT")
-POSTGRES_BACKEND_USER = Variable.get("POSTGRES_BACKEND_USER")
-POSTGRES_BACKEND_PASSWORD = Variable.get("POSTGRES_BACKEND_PASSWORD")
-SPOTIFY_CLIENT_ID = Variable.get("SPOTIFY_CLIENT_ID")
-SPOTIFY_CLIENT_SECRET = Variable.get("SPOTIFY_CLIENT_SECRET")
-BACKENT_USER_ID = Variable.get("BACKENT_USER_ID")
-GCS_TEMP_CHECKPOINT = Variable.get("GCS_TEMP_CHECKPOINT")
+POSTGRES_BACKEND_HOST = Variable.get("postgres_backend_host")
+POSTGRES_BACKEND_DATABASE = Variable.get("postgres_backend_database")
+POSTGRES_BACKEND_PORT = Variable.get("postgres_backend_port")
+POSTGRES_BACKEND_USER = Variable.get("postgres_backend_user")
+POSTGRES_BACKEND_PASSWORD = Variable.get("postgres_backend_password")
+SPOTIFY_CLIENT_ID = Variable.get("spotify_client_id")
+SPOTIFY_CLIENT_SECRET = Variable.get("spotify_client_secret")
+BACKENT_USER_ID = Variable.get("backent_user_id")
+GCS_TEMP_CHECKPOINT = Variable.get("gcs_temp_checkpoint")
 
 DATA_LANDING = f"gs://{GCS_LANDING_BUCKET}/playlist_information.avro"
 DATA_LANDING_RECENT_PLAYED = f"gs://{GCS_LANDING_BUCKET}/recent_played.avro"

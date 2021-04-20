@@ -8,18 +8,15 @@
     "num_workers": 0,
     "worker_machine_type": "n1-standard-2",
     "postgresql_jar_gcp_path": "gs://spotimood-application-dev/postgresql-42.2.14.jar",
-    "POSTGRES_BACKEND_HOST":  "localhost",
-    "POSTGRES_BACKEND_DATABASE": "postgres",
-    "POSTGRES_BACKEND_PORT":  "5432",
-    "POSTGRES_BACKEND_USER": "postgres",
-    "POSTGRES_BACKEND_PASSWORD":  "postgres",
-    "SPOTIFY_CLIENT_ID": "4a3108858bb040cc8988f1214539a0a7",
-    "SPOTIFY_CLIENT_SECRET":  "42a4446973f64c90b30beacc49c3d112",
-    "BACKENT_USER_ID": "pqor0kh7srwmehv50gan5saqi19miz8b",
-    "SONG_CLASSIFIED_TABLE":  "spotify_user_playlist_songs_classified",
-    "RECENT_PLAYED_CLASSIFIED_TABLE": "spotify_user_recent_played_songs_classified",
-    "MODEL_PATH":  "gs://spotimood-landing-dev/model/ml_model.sav",
-    "LOCAL_TEMP_CHECKPOINT": "/Users/tonibous/checkpoint"
+    "postgres_backend_host":  "localhost",
+    "postgres_backend_database": "postgres",
+    "postgres_backend_port":  "5432",
+    "postgres_backend_user": "postgres",
+    "postgres_backend_password":  "postgres",
+    "spotify_client_id": "4a3108858bb040cc8988f1214539a0a7",
+    "spotify_client_secret":  "42a4446973f64c90b30beacc49c3d112",
+    "backent_user_id": "pqor0kh7srwmehv50gan5saqi19miz8b",
+    "gcs_temp_checkpoint": "gs://spotimood-tmp-dev/checkpoint"
 }
 
 

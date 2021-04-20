@@ -2155,3 +2155,699 @@ Traceback (most recent call last):
 KeyError: 'Variable postgresql_jar_gcp_path does not exist'
 [2021-04-20 17:33:16,579] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
 [2021-04-20 17:33:16,586] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.613 seconds
+[2021-04-20 17:33:46,666] {scheduler_job.py:182} INFO - Started process (PID=307) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:33:46,669] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:33:46,670] {logging_mixin.py:104} INFO - [2021-04-20 17:33:46,670] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:33:47,239] {logging_mixin.py:104} INFO - [2021-04-20 17:33:47,235] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:33:47,241] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:33:47,248] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.586 seconds
+[2021-04-20 17:34:17,328] {scheduler_job.py:182} INFO - Started process (PID=309) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:34:17,332] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:34:17,334] {logging_mixin.py:104} INFO - [2021-04-20 17:34:17,334] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:34:18,114] {logging_mixin.py:104} INFO - [2021-04-20 17:34:18,110] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:34:18,118] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:34:18,133] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.810 seconds
+[2021-04-20 17:34:48,733] {scheduler_job.py:182} INFO - Started process (PID=311) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:34:48,737] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:34:48,739] {logging_mixin.py:104} INFO - [2021-04-20 17:34:48,739] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:34:49,498] {logging_mixin.py:104} INFO - [2021-04-20 17:34:49,495] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:34:49,502] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:34:49,510] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.789 seconds
+[2021-04-20 17:35:19,636] {scheduler_job.py:182} INFO - Started process (PID=313) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:35:19,640] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:35:19,643] {logging_mixin.py:104} INFO - [2021-04-20 17:35:19,643] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:35:20,570] {logging_mixin.py:104} INFO - [2021-04-20 17:35:20,567] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:35:20,574] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:35:20,585] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.954 seconds
+[2021-04-20 17:35:50,728] {scheduler_job.py:182} INFO - Started process (PID=315) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:35:50,732] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:35:50,735] {logging_mixin.py:104} INFO - [2021-04-20 17:35:50,735] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:35:51,578] {logging_mixin.py:104} INFO - [2021-04-20 17:35:51,570] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:35:51,583] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:35:51,597] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.874 seconds
+[2021-04-20 17:36:21,836] {scheduler_job.py:182} INFO - Started process (PID=317) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:36:21,840] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:36:21,844] {logging_mixin.py:104} INFO - [2021-04-20 17:36:21,843] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:36:22,575] {logging_mixin.py:104} INFO - [2021-04-20 17:36:22,563] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:36:22,581] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:36:22,589] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.759 seconds
+[2021-04-20 17:36:52,786] {scheduler_job.py:182} INFO - Started process (PID=320) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:36:52,792] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:36:52,794] {logging_mixin.py:104} INFO - [2021-04-20 17:36:52,794] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:36:53,631] {logging_mixin.py:104} INFO - [2021-04-20 17:36:53,624] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:36:53,637] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:36:53,651] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.877 seconds
+[2021-04-20 17:37:25,461] {scheduler_job.py:182} INFO - Started process (PID=321) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:37:25,479] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:37:25,500] {logging_mixin.py:104} INFO - [2021-04-20 17:37:25,499] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:37:29,569] {logging_mixin.py:104} INFO - [2021-04-20 17:37:29,559] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:37:29,576] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:37:29,613] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 4.288 seconds
+[2021-04-20 17:37:59,932] {scheduler_job.py:182} INFO - Started process (PID=323) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:37:59,936] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:37:59,938] {logging_mixin.py:104} INFO - [2021-04-20 17:37:59,938] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:38:00,660] {logging_mixin.py:104} INFO - [2021-04-20 17:38:00,656] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:38:00,662] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:38:00,672] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.748 seconds
+[2021-04-20 17:38:31,578] {scheduler_job.py:182} INFO - Started process (PID=325) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:38:31,589] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:38:31,600] {logging_mixin.py:104} INFO - [2021-04-20 17:38:31,600] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:38:33,356] {logging_mixin.py:104} INFO - [2021-04-20 17:38:33,345] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:38:33,366] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:38:33,429] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.879 seconds
+[2021-04-20 17:39:03,774] {scheduler_job.py:182} INFO - Started process (PID=327) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:39:03,778] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:39:03,782] {logging_mixin.py:104} INFO - [2021-04-20 17:39:03,782] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:39:04,615] {logging_mixin.py:104} INFO - [2021-04-20 17:39:04,611] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:39:04,618] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:39:04,629] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.861 seconds
+[2021-04-20 17:39:34,765] {scheduler_job.py:182} INFO - Started process (PID=330) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:39:34,769] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:39:34,770] {logging_mixin.py:104} INFO - [2021-04-20 17:39:34,770] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:39:35,455] {logging_mixin.py:104} INFO - [2021-04-20 17:39:35,451] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:39:35,457] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:39:35,466] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.708 seconds
+[2021-04-20 17:40:05,554] {scheduler_job.py:182} INFO - Started process (PID=332) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:40:05,557] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:40:05,559] {logging_mixin.py:104} INFO - [2021-04-20 17:40:05,559] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:40:06,168] {logging_mixin.py:104} INFO - [2021-04-20 17:40:06,165] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:40:06,170] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:40:06,177] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.627 seconds
+[2021-04-20 17:40:36,257] {scheduler_job.py:182} INFO - Started process (PID=334) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:40:36,260] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:40:36,261] {logging_mixin.py:104} INFO - [2021-04-20 17:40:36,261] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:40:36,839] {logging_mixin.py:104} INFO - [2021-04-20 17:40:36,835] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:40:36,841] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:40:36,849] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.597 seconds
+[2021-04-20 17:41:06,960] {scheduler_job.py:182} INFO - Started process (PID=336) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:41:06,964] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:41:06,968] {logging_mixin.py:104} INFO - [2021-04-20 17:41:06,968] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:41:08,435] {logging_mixin.py:104} INFO - [2021-04-20 17:41:08,424] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:41:08,440] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:41:08,457] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.544 seconds
+[2021-04-20 17:41:38,600] {scheduler_job.py:182} INFO - Started process (PID=337) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:41:38,603] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:41:38,604] {logging_mixin.py:104} INFO - [2021-04-20 17:41:38,604] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:41:39,167] {logging_mixin.py:104} INFO - [2021-04-20 17:41:39,164] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:41:39,170] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:41:39,181] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.585 seconds
+[2021-04-20 17:42:09,284] {scheduler_job.py:182} INFO - Started process (PID=339) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:42:09,287] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:42:09,288] {logging_mixin.py:104} INFO - [2021-04-20 17:42:09,288] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:42:09,845] {logging_mixin.py:104} INFO - [2021-04-20 17:42:09,841] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:42:09,849] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:42:09,861] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.582 seconds
+[2021-04-20 17:42:39,981] {scheduler_job.py:182} INFO - Started process (PID=341) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:42:39,983] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:42:39,985] {logging_mixin.py:104} INFO - [2021-04-20 17:42:39,985] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:42:40,592] {logging_mixin.py:104} INFO - [2021-04-20 17:42:40,588] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:42:40,598] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:42:40,608] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.633 seconds
+[2021-04-20 17:43:10,745] {scheduler_job.py:182} INFO - Started process (PID=343) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:43:10,758] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:43:10,761] {logging_mixin.py:104} INFO - [2021-04-20 17:43:10,760] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:43:11,341] {logging_mixin.py:104} INFO - [2021-04-20 17:43:11,337] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:43:11,344] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:43:11,355] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.617 seconds
+[2021-04-20 17:43:41,470] {scheduler_job.py:182} INFO - Started process (PID=345) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:43:41,473] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:43:41,475] {logging_mixin.py:104} INFO - [2021-04-20 17:43:41,475] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:43:42,067] {logging_mixin.py:104} INFO - [2021-04-20 17:43:42,062] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:43:42,069] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:43:42,077] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.612 seconds
+[2021-04-20 17:44:12,188] {scheduler_job.py:182} INFO - Started process (PID=347) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:44:12,190] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:44:12,192] {logging_mixin.py:104} INFO - [2021-04-20 17:44:12,192] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:44:12,764] {logging_mixin.py:104} INFO - [2021-04-20 17:44:12,761] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:44:12,767] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:44:12,773] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.589 seconds
+[2021-04-20 17:44:42,896] {scheduler_job.py:182} INFO - Started process (PID=349) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:44:42,898] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:44:42,900] {logging_mixin.py:104} INFO - [2021-04-20 17:44:42,900] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:44:43,497] {logging_mixin.py:104} INFO - [2021-04-20 17:44:43,493] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:44:43,500] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:44:43,509] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.618 seconds
+[2021-04-20 17:45:13,634] {scheduler_job.py:182} INFO - Started process (PID=351) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:45:13,638] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:45:13,641] {logging_mixin.py:104} INFO - [2021-04-20 17:45:13,641] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:45:14,272] {logging_mixin.py:104} INFO - [2021-04-20 17:45:14,269] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:45:14,276] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:45:14,285] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.654 seconds
+[2021-04-20 17:45:44,395] {scheduler_job.py:182} INFO - Started process (PID=353) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:45:44,400] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:45:44,403] {logging_mixin.py:104} INFO - [2021-04-20 17:45:44,403] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:45:45,093] {logging_mixin.py:104} INFO - [2021-04-20 17:45:45,087] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:45:45,096] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:45:45,105] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.714 seconds
+[2021-04-20 17:46:15,266] {scheduler_job.py:182} INFO - Started process (PID=355) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:46:15,274] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:46:15,280] {logging_mixin.py:104} INFO - [2021-04-20 17:46:15,279] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:46:16,316] {logging_mixin.py:104} INFO - [2021-04-20 17:46:16,310] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:46:16,323] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:46:16,335] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.083 seconds
+[2021-04-20 17:46:46,486] {scheduler_job.py:182} INFO - Started process (PID=357) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:46:46,489] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:46:46,491] {logging_mixin.py:104} INFO - [2021-04-20 17:46:46,491] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:46:47,136] {logging_mixin.py:104} INFO - [2021-04-20 17:46:47,132] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:46:47,139] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:46:47,148] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.666 seconds
+[2021-04-20 17:47:17,312] {scheduler_job.py:182} INFO - Started process (PID=359) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:47:17,316] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:47:17,318] {logging_mixin.py:104} INFO - [2021-04-20 17:47:17,318] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:47:18,065] {logging_mixin.py:104} INFO - [2021-04-20 17:47:18,060] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:47:18,068] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:47:18,084] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.776 seconds
+[2021-04-20 17:47:48,447] {scheduler_job.py:182} INFO - Started process (PID=361) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:47:48,583] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:47:48,586] {logging_mixin.py:104} INFO - [2021-04-20 17:47:48,585] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:47:59,532] {logging_mixin.py:104} INFO - [2021-04-20 17:47:59,521] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:47:59,538] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:47:59,556] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 11.116 seconds
+[2021-04-20 17:48:29,781] {scheduler_job.py:182} INFO - Started process (PID=363) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:48:29,789] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:48:29,792] {logging_mixin.py:104} INFO - [2021-04-20 17:48:29,792] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:48:31,310] {logging_mixin.py:104} INFO - [2021-04-20 17:48:31,305] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:48:31,316] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:48:31,328] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.569 seconds
+[2021-04-20 17:49:01,535] {scheduler_job.py:182} INFO - Started process (PID=365) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:49:01,541] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:49:01,543] {logging_mixin.py:104} INFO - [2021-04-20 17:49:01,543] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:49:02,393] {logging_mixin.py:104} INFO - [2021-04-20 17:49:02,386] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:49:02,398] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:49:02,415] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.886 seconds
+[2021-04-20 17:49:32,511] {scheduler_job.py:182} INFO - Started process (PID=367) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:49:32,514] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:49:32,519] {logging_mixin.py:104} INFO - [2021-04-20 17:49:32,518] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:49:33,945] {logging_mixin.py:104} INFO - [2021-04-20 17:49:33,939] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:49:33,950] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:49:33,969] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.464 seconds
+[2021-04-20 17:50:04,109] {scheduler_job.py:182} INFO - Started process (PID=369) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:50:04,112] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:50:04,115] {logging_mixin.py:104} INFO - [2021-04-20 17:50:04,115] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:50:04,771] {logging_mixin.py:104} INFO - [2021-04-20 17:50:04,767] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:50:04,775] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:50:04,784] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.681 seconds
+[2021-04-20 17:50:34,881] {scheduler_job.py:182} INFO - Started process (PID=371) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:50:34,884] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:50:34,887] {logging_mixin.py:104} INFO - [2021-04-20 17:50:34,887] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:50:35,575] {logging_mixin.py:104} INFO - [2021-04-20 17:50:35,571] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 19, in <module>
+    GCS_POSTGRESQL_JAR_PATH = Variable.get('postgresql_jar_gcp_path')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable postgresql_jar_gcp_path does not exist'
+[2021-04-20 17:50:35,580] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:50:35,595] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.720 seconds
+[2021-04-20 17:51:05,797] {scheduler_job.py:182} INFO - Started process (PID=373) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:51:05,806] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:51:05,811] {logging_mixin.py:104} INFO - [2021-04-20 17:51:05,811] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:51:06,854] {logging_mixin.py:104} INFO - [2021-04-20 17:51:06,850] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 54, in <module>
+    GCS_TEMP_CHECKPOINT = Variable.get("GCS_TEMP_CHECKPOINT")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable GCS_TEMP_CHECKPOINT does not exist'
+[2021-04-20 17:51:06,857] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:51:06,880] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.089 seconds
+[2021-04-20 17:51:37,113] {scheduler_job.py:182} INFO - Started process (PID=375) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:51:37,117] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:51:37,119] {logging_mixin.py:104} INFO - [2021-04-20 17:51:37,119] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:51:37,964] {logging_mixin.py:104} INFO - [2021-04-20 17:51:37,960] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 54, in <module>
+    GCS_TEMP_CHECKPOINT = Variable.get("GCS_TEMP_CHECKPOINT")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable GCS_TEMP_CHECKPOINT does not exist'
+[2021-04-20 17:51:37,967] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:51:37,978] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.905 seconds
+[2021-04-20 17:52:08,050] {scheduler_job.py:182} INFO - Started process (PID=378) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:52:08,054] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:52:08,058] {logging_mixin.py:104} INFO - [2021-04-20 17:52:08,057] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:52:08,876] {logging_mixin.py:104} INFO - [2021-04-20 17:52:08,869] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 14, in <module>
+    GCS_APP_BUCKET = Variable.get('gcs_app_bucket')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_app_bucket does not exist'
+[2021-04-20 17:52:08,884] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:52:08,906] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.861 seconds
+[2021-04-20 17:52:38,994] {scheduler_job.py:182} INFO - Started process (PID=379) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:52:38,998] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:52:39,004] {logging_mixin.py:104} INFO - [2021-04-20 17:52:39,004] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:52:39,936] {logging_mixin.py:104} INFO - [2021-04-20 17:52:39,928] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 46, in <module>
+    POSTGRES_BACKEND_HOST = Variable.get("POSTGRES_BACKEND_HOST")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable POSTGRES_BACKEND_HOST does not exist'
+[2021-04-20 17:52:39,943] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:52:39,966] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.977 seconds
+[2021-04-20 17:53:10,136] {scheduler_job.py:182} INFO - Started process (PID=381) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:53:10,145] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:53:10,150] {logging_mixin.py:104} INFO - [2021-04-20 17:53:10,150] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:53:11,392] {logging_mixin.py:104} INFO - [2021-04-20 17:53:11,387] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 46, in <module>
+    POSTGRES_BACKEND_HOST = Variable.get("POSTGRES_BACKEND_HOST")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable POSTGRES_BACKEND_HOST does not exist'
+[2021-04-20 17:53:11,396] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:53:11,407] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.279 seconds
+[2021-04-20 17:53:41,554] {scheduler_job.py:182} INFO - Started process (PID=383) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:53:41,559] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:53:41,561] {logging_mixin.py:104} INFO - [2021-04-20 17:53:41,561] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:53:42,479] {logging_mixin.py:104} INFO - [2021-04-20 17:53:42,475] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 46, in <module>
+    POSTGRES_BACKEND_HOST = Variable.get("POSTGRES_BACKEND_HOST")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable POSTGRES_BACKEND_HOST does not exist'
+[2021-04-20 17:53:42,483] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:53:42,492] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.947 seconds
+[2021-04-20 17:54:12,646] {scheduler_job.py:182} INFO - Started process (PID=385) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:54:12,650] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:54:12,652] {logging_mixin.py:104} INFO - [2021-04-20 17:54:12,652] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:54:13,561] {logging_mixin.py:104} INFO - [2021-04-20 17:54:13,558] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 46, in <module>
+    POSTGRES_BACKEND_HOST = Variable.get("POSTGRES_BACKEND_HOST")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable POSTGRES_BACKEND_HOST does not exist'
+[2021-04-20 17:54:13,565] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:54:13,575] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.934 seconds
+[2021-04-20 17:54:43,627] {scheduler_job.py:182} INFO - Started process (PID=387) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:54:43,632] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:54:43,635] {logging_mixin.py:104} INFO - [2021-04-20 17:54:43,634] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:54:44,707] {logging_mixin.py:104} INFO - [2021-04-20 17:54:44,702] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 54, in <module>
+    GCS_TEMP_CHECKPOINT = Variable.get("gcs_temp_checkpoint")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_temp_checkpoint does not exist'
+[2021-04-20 17:54:44,710] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:54:44,731] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.110 seconds
+[2021-04-20 17:55:14,814] {scheduler_job.py:182} INFO - Started process (PID=389) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:55:14,818] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:55:14,820] {logging_mixin.py:104} INFO - [2021-04-20 17:55:14,820] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:55:15,788] {logging_mixin.py:104} INFO - [2021-04-20 17:55:15,778] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 54, in <module>
+    GCS_TEMP_CHECKPOINT = Variable.get("gcs_temp_checkpoint")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_temp_checkpoint does not exist'
+[2021-04-20 17:55:15,794] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:55:15,810] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.003 seconds
+[2021-04-20 17:55:45,963] {scheduler_job.py:182} INFO - Started process (PID=391) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:55:45,965] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:55:45,968] {logging_mixin.py:104} INFO - [2021-04-20 17:55:45,968] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:55:46,848] {logging_mixin.py:104} INFO - [2021-04-20 17:55:46,835] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 54, in <module>
+    GCS_TEMP_CHECKPOINT = Variable.get("gcs_temp_checkpoint")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_temp_checkpoint does not exist'
+[2021-04-20 17:55:46,861] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:55:46,871] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.913 seconds
+[2021-04-20 17:56:17,057] {scheduler_job.py:182} INFO - Started process (PID=393) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:56:17,064] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:56:17,068] {logging_mixin.py:104} INFO - [2021-04-20 17:56:17,068] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:56:18,416] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-20 17:56:18,487] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['daily_playlist_ingestion']) retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:56:18,508] {logging_mixin.py:104} INFO - [2021-04-20 17:56:18,507] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-20 17:56:18,529] {logging_mixin.py:104} INFO - [2021-04-20 17:56:18,529] {dag.py:2273} INFO - Setting next_dagrun for daily_playlist_ingestion to 2021-01-31 05:00:00+00:00
+[2021-04-20 17:56:18,556] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.505 seconds

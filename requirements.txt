@@ -1,0 +1,6 @@
+google-api-python-client==1.8.2
+apache-airflow==2.0.0
+apache-airflow-providers-google==1.0.0
+google-cloud-storage
+google-cloud-bigquery
+pandas_gbq

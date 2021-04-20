@@ -1,0 +1,671 @@
+[2021-04-18 13:57:23,802] {scheduler_job.py:182} INFO - Started process (PID=43) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:57:23,808] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 13:57:23,812] {logging_mixin.py:104} INFO - [2021-04-18 13:57:23,812] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:57:26,951] {logging_mixin.py:104} INFO - [2021-04-18 13:57:26,933] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 13:57:26,959] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:57:27,083] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 3.300 seconds
+[2021-04-18 13:58:02,237] {scheduler_job.py:182} INFO - Started process (PID=73) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:58:02,256] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 13:58:02,280] {logging_mixin.py:104} INFO - [2021-04-18 13:58:02,280] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:58:09,711] {logging_mixin.py:104} INFO - [2021-04-18 13:58:09,639] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 13:58:09,729] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:58:09,994] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 7.780 seconds
+[2021-04-18 13:58:50,038] {scheduler_job.py:182} INFO - Started process (PID=101) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:58:50,045] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 13:58:50,050] {logging_mixin.py:104} INFO - [2021-04-18 13:58:50,050] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:58:55,167] {logging_mixin.py:104} INFO - [2021-04-18 13:58:55,096] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 13:58:55,183] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:58:55,259] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 5.237 seconds
+[2021-04-18 13:59:25,406] {scheduler_job.py:182} INFO - Started process (PID=130) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:59:25,411] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 13:59:25,414] {logging_mixin.py:104} INFO - [2021-04-18 13:59:25,414] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:59:26,095] {logging_mixin.py:104} INFO - [2021-04-18 13:59:26,092] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 13:59:26,100] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:59:26,140] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.741 seconds
+[2021-04-18 13:59:57,052] {scheduler_job.py:182} INFO - Started process (PID=157) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:59:57,055] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 13:59:57,056] {logging_mixin.py:104} INFO - [2021-04-18 13:59:57,056] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:59:57,877] {logging_mixin.py:104} INFO - [2021-04-18 13:59:57,871] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 13:59:57,884] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 13:59:57,960] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.913 seconds
+[2021-04-18 14:00:28,586] {scheduler_job.py:182} INFO - Started process (PID=188) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:00:28,589] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:00:28,591] {logging_mixin.py:104} INFO - [2021-04-18 14:00:28,591] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:00:29,082] {logging_mixin.py:104} INFO - [2021-04-18 14:00:29,079] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 14:00:29,086] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:00:29,107] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.526 seconds
+[2021-04-18 14:00:59,310] {scheduler_job.py:182} INFO - Started process (PID=213) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:00:59,314] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:00:59,316] {logging_mixin.py:104} INFO - [2021-04-18 14:00:59,316] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:00:59,818] {logging_mixin.py:104} INFO - [2021-04-18 14:00:59,815] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 14:00:59,820] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:00:59,841] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.536 seconds
+[2021-04-18 14:01:30,182] {scheduler_job.py:182} INFO - Started process (PID=243) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:01:30,185] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:01:30,188] {logging_mixin.py:104} INFO - [2021-04-18 14:01:30,188] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:01:30,681] {logging_mixin.py:104} INFO - [2021-04-18 14:01:30,678] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 14:01:30,683] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:01:30,709] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.531 seconds
+[2021-04-18 14:02:01,524] {scheduler_job.py:182} INFO - Started process (PID=272) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:02:01,528] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:02:01,531] {logging_mixin.py:104} INFO - [2021-04-18 14:02:01,530] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:02:01,974] {logging_mixin.py:104} INFO - [2021-04-18 14:02:01,970] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 14:02:01,977] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:02:02,006] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.487 seconds
+[2021-04-18 14:02:32,050] {scheduler_job.py:182} INFO - Started process (PID=300) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:02:32,053] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:02:32,055] {logging_mixin.py:104} INFO - [2021-04-18 14:02:32,055] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:02:32,580] {logging_mixin.py:104} INFO - [2021-04-18 14:02:32,576] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 14:02:32,582] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:02:32,606] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.561 seconds
+[2021-04-18 14:03:03,370] {scheduler_job.py:182} INFO - Started process (PID=328) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:03:03,373] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:03:03,375] {logging_mixin.py:104} INFO - [2021-04-18 14:03:03,375] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:03:03,851] {logging_mixin.py:104} INFO - [2021-04-18 14:03:03,848] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 14:03:03,853] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:03:03,883] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.517 seconds
+[2021-04-18 14:03:34,739] {scheduler_job.py:182} INFO - Started process (PID=356) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:03:34,741] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:03:34,743] {logging_mixin.py:104} INFO - [2021-04-18 14:03:34,742] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:03:35,205] {logging_mixin.py:104} INFO - [2021-04-18 14:03:35,202] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 6, in <module>
+    from plugins.operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
+ModuleNotFoundError: No module named 'plugins'
+[2021-04-18 14:03:35,207] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:03:35,230] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.494 seconds
+[2021-04-18 14:04:06,193] {scheduler_job.py:182} INFO - Started process (PID=386) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:04:06,198] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:04:06,211] {logging_mixin.py:104} INFO - [2021-04-18 14:04:06,209] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:04:07,018] {logging_mixin.py:104} INFO - [2021-04-18 14:04:07,001] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 15, in <module>
+    GCS_APP_BUCKET = Variable.get('gcs_app_bucket')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_app_bucket does not exist'
+[2021-04-18 14:04:07,028] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:04:07,043] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.862 seconds
+[2021-04-18 14:04:37,838] {scheduler_job.py:182} INFO - Started process (PID=413) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:04:37,842] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:04:37,843] {logging_mixin.py:104} INFO - [2021-04-18 14:04:37,843] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:04:38,351] {logging_mixin.py:104} INFO - [2021-04-18 14:04:38,348] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 15, in <module>
+    GCS_APP_BUCKET = Variable.get('gcs_app_bucket')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_app_bucket does not exist'
+[2021-04-18 14:04:38,353] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:04:38,362] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.528 seconds
+[2021-04-18 14:05:09,249] {scheduler_job.py:182} INFO - Started process (PID=441) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:05:09,252] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:05:09,253] {logging_mixin.py:104} INFO - [2021-04-18 14:05:09,253] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:05:09,868] {logging_mixin.py:104} INFO - [2021-04-18 14:05:09,863] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 15, in <module>
+    GCS_APP_BUCKET = Variable.get('gcs_app_bucket')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_app_bucket does not exist'
+[2021-04-18 14:05:09,874] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:05:09,885] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.639 seconds
+[2021-04-18 14:05:40,869] {scheduler_job.py:182} INFO - Started process (PID=469) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:05:40,889] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:05:40,897] {logging_mixin.py:104} INFO - [2021-04-18 14:05:40,896] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:05:41,588] {logging_mixin.py:104} INFO - [2021-04-18 14:05:41,585] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 15, in <module>
+    GCS_APP_BUCKET = Variable.get('gcs_app_bucket')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gcs_app_bucket does not exist'
+[2021-04-18 14:05:41,590] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:05:41,598] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.759 seconds
+[2021-04-18 14:06:12,512] {scheduler_job.py:182} INFO - Started process (PID=497) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:06:12,516] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:06:12,519] {logging_mixin.py:104} INFO - [2021-04-18 14:06:12,519] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:06:13,323] {logging_mixin.py:104} INFO - [2021-04-18 14:06:13,305] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 16, in <module>
+    AVAILABILITY_AGG_TABLE = Variable.get('bq_availability_agg_table')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable bq_availability_agg_table does not exist'
+[2021-04-18 14:06:13,332] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:06:13,345] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.841 seconds
+[2021-04-18 14:06:44,281] {scheduler_job.py:182} INFO - Started process (PID=525) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:06:44,284] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:06:44,286] {logging_mixin.py:104} INFO - [2021-04-18 14:06:44,285] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:06:45,663] {logging_mixin.py:104} INFO - [2021-04-18 14:06:45,655] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 15, in <module>
+    AVAILABILITY_AGG_TABLE = Variable.get('bq_availability_agg_table')
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 128, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable bq_availability_agg_table does not exist'
+[2021-04-18 14:06:45,670] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:06:45,684] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.408 seconds
+[2021-04-18 14:07:15,863] {scheduler_job.py:182} INFO - Started process (PID=554) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:07:15,872] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:07:15,877] {logging_mixin.py:104} INFO - [2021-04-18 14:07:15,876] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:07:16,663] {logging_mixin.py:104} INFO - [2021-04-18 14:07:16,658] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 51, in <module>
+    "spark-env:GCS_TEMP_BIGQUERY_BUCKET": GCS_TEMP_BIGQUERY_BUCKET,
+NameError: name 'GCS_TEMP_BIGQUERY_BUCKET' is not defined
+[2021-04-18 14:07:16,667] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:07:16,679] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.835 seconds
+[2021-04-18 14:07:46,739] {scheduler_job.py:182} INFO - Started process (PID=581) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:07:46,746] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:07:46,749] {logging_mixin.py:104} INFO - [2021-04-18 14:07:46,749] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:07:49,426] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:07:49,464] {logging_mixin.py:104} INFO - [2021-04-18 14:07:49,441] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 951, in __init__
+    self.hook = DataprocHook(gcp_conn_id=gcp_conn_id, impersonation_chain=impersonation_chain)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 211, in __init__
+    self.extras = self.get_connection(self.gcp_conn_id).extra_dejson  # type: Dict
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 63, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `google_cloud_default` isn't defined
+[2021-04-18 14:07:49,477] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:07:49,488] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 2.755 seconds
+[2021-04-18 14:08:20,286] {scheduler_job.py:182} INFO - Started process (PID=610) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:08:20,288] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:08:20,290] {logging_mixin.py:104} INFO - [2021-04-18 14:08:20,290] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:08:21,018] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:08:21,032] {logging_mixin.py:104} INFO - [2021-04-18 14:08:21,028] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 951, in __init__
+    self.hook = DataprocHook(gcp_conn_id=gcp_conn_id, impersonation_chain=impersonation_chain)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 211, in __init__
+    self.extras = self.get_connection(self.gcp_conn_id).extra_dejson  # type: Dict
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 63, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `google_cloud_default` isn't defined
+[2021-04-18 14:08:21,036] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:08:21,047] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.773 seconds
+[2021-04-18 14:08:51,190] {scheduler_job.py:182} INFO - Started process (PID=638) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:08:51,192] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:08:51,193] {logging_mixin.py:104} INFO - [2021-04-18 14:08:51,193] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:08:51,918] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:08:51,932] {logging_mixin.py:104} INFO - [2021-04-18 14:08:51,926] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 951, in __init__
+    self.hook = DataprocHook(gcp_conn_id=gcp_conn_id, impersonation_chain=impersonation_chain)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 211, in __init__
+    self.extras = self.get_connection(self.gcp_conn_id).extra_dejson  # type: Dict
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 63, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `google_cloud_default` isn't defined
+[2021-04-18 14:08:51,936] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:08:51,944] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 0.758 seconds
+[2021-04-18 14:09:22,503] {scheduler_job.py:182} INFO - Started process (PID=666) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:09:22,507] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:09:22,510] {logging_mixin.py:104} INFO - [2021-04-18 14:09:22,510] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:09:23,226] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:09:23,233] {logging_mixin.py:104} INFO - [2021-04-18 14:09:23,233] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:09:26,252] {logging_mixin.py:104} INFO - [2021-04-18 14:09:26,252] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 1 of 3. Reason: timed out
+[2021-04-18 14:09:29,303] {logging_mixin.py:104} INFO - [2021-04-18 14:09:29,290] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 2 of 3. Reason: timed out
+[2021-04-18 14:09:29,332] {logging_mixin.py:104} INFO - [2021-04-18 14:09:29,331] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 3 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:09:29,335] {logging_mixin.py:104} INFO - [2021-04-18 14:09:29,335] {_default.py:250} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2021-04-18 14:09:29,354] {logging_mixin.py:104} INFO - [2021-04-18 14:09:29,337] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 952, in __init__
+    self.project_id = self.hook.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 237, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 309, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 242, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_adc()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_adc
+    credentials, project_id = google.auth.default(scopes=self.scopes)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/auth/_default.py", line 364, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2021-04-18 14:09:29,358] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:09:29,386] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 6.891 seconds
+[2021-04-18 14:09:59,946] {scheduler_job.py:182} INFO - Started process (PID=699) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:09:59,948] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:09:59,950] {logging_mixin.py:104} INFO - [2021-04-18 14:09:59,950] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:10:00,541] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:10:00,552] {logging_mixin.py:104} INFO - [2021-04-18 14:10:00,552] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:10:03,564] {logging_mixin.py:104} INFO - [2021-04-18 14:10:03,564] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 1 of 3. Reason: timed out
+[2021-04-18 14:10:03,575] {logging_mixin.py:104} INFO - [2021-04-18 14:10:03,574] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 2 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:10:03,582] {logging_mixin.py:104} INFO - [2021-04-18 14:10:03,582] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 3 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:10:03,583] {logging_mixin.py:104} INFO - [2021-04-18 14:10:03,583] {_default.py:250} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2021-04-18 14:10:03,588] {logging_mixin.py:104} INFO - [2021-04-18 14:10:03,584] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 952, in __init__
+    self.project_id = self.hook.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 237, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 309, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 242, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_adc()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_adc
+    credentials, project_id = google.auth.default(scopes=self.scopes)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/auth/_default.py", line 364, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2021-04-18 14:10:03,591] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:10:03,598] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 3.656 seconds
+[2021-04-18 14:10:34,084] {scheduler_job.py:182} INFO - Started process (PID=731) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:10:34,091] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:10:34,095] {logging_mixin.py:104} INFO - [2021-04-18 14:10:34,095] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:10:34,960] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:10:34,971] {logging_mixin.py:104} INFO - [2021-04-18 14:10:34,971] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:10:37,945] {logging_mixin.py:104} INFO - [2021-04-18 14:10:37,945] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 1 of 3. Reason: timed out
+[2021-04-18 14:10:37,948] {logging_mixin.py:104} INFO - [2021-04-18 14:10:37,948] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 2 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:10:37,952] {logging_mixin.py:104} INFO - [2021-04-18 14:10:37,952] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 3 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:10:37,953] {logging_mixin.py:104} INFO - [2021-04-18 14:10:37,953] {_default.py:250} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2021-04-18 14:10:37,958] {logging_mixin.py:104} INFO - [2021-04-18 14:10:37,954] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 952, in __init__
+    self.project_id = self.hook.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 237, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 309, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 242, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_adc()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_adc
+    credentials, project_id = google.auth.default(scopes=self.scopes)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/auth/_default.py", line 364, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2021-04-18 14:10:37,960] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:10:37,976] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 3.933 seconds
+[2021-04-18 14:11:08,530] {scheduler_job.py:182} INFO - Started process (PID=761) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:11:08,534] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:11:08,537] {logging_mixin.py:104} INFO - [2021-04-18 14:11:08,537] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:11:09,384] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:11:09,392] {logging_mixin.py:104} INFO - [2021-04-18 14:11:09,392] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:11:12,400] {logging_mixin.py:104} INFO - [2021-04-18 14:11:12,400] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 1 of 3. Reason: timed out
+[2021-04-18 14:11:15,405] {logging_mixin.py:104} INFO - [2021-04-18 14:11:15,405] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 2 of 3. Reason: timed out
+[2021-04-18 14:11:15,411] {logging_mixin.py:104} INFO - [2021-04-18 14:11:15,411] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 3 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:11:15,413] {logging_mixin.py:104} INFO - [2021-04-18 14:11:15,412] {_default.py:250} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2021-04-18 14:11:15,421] {logging_mixin.py:104} INFO - [2021-04-18 14:11:15,414] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 952, in __init__
+    self.project_id = self.hook.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 237, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 309, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 242, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_adc()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_adc
+    credentials, project_id = google.auth.default(scopes=self.scopes)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/auth/_default.py", line 364, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2021-04-18 14:11:15,428] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:11:15,442] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 6.921 seconds
+[2021-04-18 14:12:36,253] {scheduler_job.py:182} INFO - Started process (PID=34) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:12:36,272] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:12:36,280] {logging_mixin.py:104} INFO - [2021-04-18 14:12:36,280] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:12:40,371] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:12:40,390] {logging_mixin.py:104} INFO - [2021-04-18 14:12:40,390] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:12:43,409] {logging_mixin.py:104} INFO - [2021-04-18 14:12:43,409] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 1 of 3. Reason: timed out
+[2021-04-18 14:12:46,433] {logging_mixin.py:104} INFO - [2021-04-18 14:12:46,433] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 2 of 3. Reason: timed out
+[2021-04-18 14:12:46,440] {logging_mixin.py:104} INFO - [2021-04-18 14:12:46,439] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 3 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:12:46,442] {logging_mixin.py:104} INFO - [2021-04-18 14:12:46,442] {_default.py:250} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2021-04-18 14:12:46,459] {logging_mixin.py:104} INFO - [2021-04-18 14:12:46,451] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 952, in __init__
+    self.project_id = self.hook.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 237, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 309, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 242, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_adc()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_adc
+    credentials, project_id = google.auth.default(scopes=self.scopes)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/auth/_default.py", line 364, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2021-04-18 14:12:46,470] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:12:46,504] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 10.317 seconds
+[2021-04-18 14:13:17,402] {scheduler_job.py:182} INFO - Started process (PID=62) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:13:17,406] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:13:17,408] {logging_mixin.py:104} INFO - [2021-04-18 14:13:17,408] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:13:22,288] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:13:22,655] {logging_mixin.py:104} INFO - [2021-04-18 14:13:22,655] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:13:25,957] {logging_mixin.py:104} INFO - [2021-04-18 14:13:25,947] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 1 of 3. Reason: timed out
+[2021-04-18 14:13:26,033] {logging_mixin.py:104} INFO - [2021-04-18 14:13:26,032] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 2 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:13:26,099] {logging_mixin.py:104} INFO - [2021-04-18 14:13:26,099] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 3 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:13:26,111] {logging_mixin.py:104} INFO - [2021-04-18 14:13:26,111] {_default.py:250} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2021-04-18 14:13:26,436] {logging_mixin.py:104} INFO - [2021-04-18 14:13:26,119] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 952, in __init__
+    self.project_id = self.hook.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 237, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 309, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 242, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_adc()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_adc
+    credentials, project_id = google.auth.default(scopes=self.scopes)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/auth/_default.py", line 364, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2021-04-18 14:13:26,534] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:13:27,101] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 9.703 seconds
+[2021-04-18 14:13:57,733] {scheduler_job.py:182} INFO - Started process (PID=90) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:13:57,737] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:13:57,739] {logging_mixin.py:104} INFO - [2021-04-18 14:13:57,739] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:13:59,094] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:13:59,127] {logging_mixin.py:104} INFO - [2021-04-18 14:13:59,126] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:14:02,131] {logging_mixin.py:104} INFO - [2021-04-18 14:14:02,131] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 1 of 3. Reason: timed out
+[2021-04-18 14:14:02,134] {logging_mixin.py:104} INFO - [2021-04-18 14:14:02,134] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 2 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:14:02,138] {logging_mixin.py:104} INFO - [2021-04-18 14:14:02,138] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable onattempt 3 of 3. Reason: [Errno 111] Connection refused
+[2021-04-18 14:14:02,139] {logging_mixin.py:104} INFO - [2021-04-18 14:14:02,139] {_default.py:250} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2021-04-18 14:14:02,150] {logging_mixin.py:104} INFO - [2021-04-18 14:14:02,140] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/daily_playlist_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/daily_playlist_ingestion.py", line 80, in <module>
+    dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 89, in __call__
+    obj: BaseOperator = type.__call__(cls, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1501, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/decorators.py", line 94, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 952, in __init__
+    self.project_id = self.hook.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 237, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 309, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 242, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_adc()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_adc
+    credentials, project_id = google.auth.default(scopes=self.scopes)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/auth/_default.py", line 364, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2021-04-18 14:14:02,154] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:14:02,166] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 4.439 seconds
+[2021-04-18 14:14:32,442] {scheduler_job.py:182} INFO - Started process (PID=134) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:14:32,446] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-18 14:14:32,448] {logging_mixin.py:104} INFO - [2021-04-18 14:14:32,447] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-18 14:14:33,459] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-18 14:14:33,482] {logging_mixin.py:104} INFO - [2021-04-18 14:14:33,481] {credentials_provider.py:300} INFO - Getting connection using `google.auth.default()` since no key file is defined for hook.
+[2021-04-18 14:14:35,567] {logging_mixin.py:104} INFO - [2021-04-18 14:14:35,567] {process_utils.py:206} INFO - Waiting up to 5 seconds for processes to exit...

@@ -2851,3 +2851,11 @@ KeyError: 'Variable gcs_temp_checkpoint does not exist'
 [2021-04-20 17:56:18,508] {logging_mixin.py:104} INFO - [2021-04-20 17:56:18,507] {dag.py:1818} INFO - Sync 1 DAGs
 [2021-04-20 17:56:18,529] {logging_mixin.py:104} INFO - [2021-04-20 17:56:18,529] {dag.py:2273} INFO - Setting next_dagrun for daily_playlist_ingestion to 2021-01-31 05:00:00+00:00
 [2021-04-20 17:56:18,556] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.505 seconds
+[2021-04-20 17:56:48,732] {scheduler_job.py:182} INFO - Started process (PID=395) to work on /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:56:48,734] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/daily_playlist_ingestion.py for tasks to queue
+[2021-04-20 17:56:48,736] {logging_mixin.py:104} INFO - [2021-04-20 17:56:48,736] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:56:49,816] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py:1498 DeprecationWarning: The `DataprocSubmitPySparkJobOperator` operator is deprecated, please use `DataprocSubmitJobOperator` instead. You can use `generate_job` method of `DataprocSubmitPySparkJobOperator` to generate dictionary representing your job and use it with the new operator.
+[2021-04-20 17:56:49,853] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['daily_playlist_ingestion']) retrieved from /opt/airflow/dags/daily_playlist_ingestion.py
+[2021-04-20 17:56:49,869] {logging_mixin.py:104} INFO - [2021-04-20 17:56:49,868] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-20 17:56:49,893] {logging_mixin.py:104} INFO - [2021-04-20 17:56:49,892] {dag.py:2273} INFO - Setting next_dagrun for daily_playlist_ingestion to 2021-01-31 05:00:00+00:00
+[2021-04-20 17:56:49,905] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/daily_playlist_ingestion.py took 1.179 seconds

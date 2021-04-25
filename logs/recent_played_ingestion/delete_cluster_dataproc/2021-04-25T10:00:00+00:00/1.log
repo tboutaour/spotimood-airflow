@@ -1,0 +1,58 @@
+[2021-04-25 11:45:05,721] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T10:00:00+00:00 [queued]>
+[2021-04-25 11:45:05,767] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T10:00:00+00:00 [queued]>
+[2021-04-25 11:45:05,769] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 11:45:05,770] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-25 11:45:05,772] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 11:45:05,786] {taskinstance.py:1063} INFO - Executing <Task(PatchedDataprocDeleteClusterOperator): delete_cluster_dataproc> on 2021-04-25T10:00:00+00:00
+[2021-04-25 11:45:05,801] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'recent_played_ingestion', 'delete_cluster_dataproc', '2021-04-25T10:00:00+00:00', '--job-id', '77', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/recent_played_ingestion.py', '--cfg-path', '/tmp/tmpoqnh9ft9', '--error-file', '/tmp/tmp11moum5y']
+[2021-04-25 11:45:05,793] {standard_task_runner.py:52} INFO - Started process 468 to run task
+[2021-04-25 11:45:05,815] {standard_task_runner.py:77} INFO - Job 77: Subtask delete_cluster_dataproc
+[2021-04-25 11:45:05,987] {logging_mixin.py:104} INFO - Running <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T10:00:00+00:00 [running]> on host 67976f37379c
+[2021-04-25 11:45:06,124] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=recent_played_ingestion
+AIRFLOW_CTX_TASK_ID=delete_cluster_dataproc
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-25T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-25T10:00:00+00:00
+[2021-04-25 11:45:06,151] {dataproc.py:840} INFO - Deleting cluster: ephemeral-recent-played-spark-cluster-20210425
+[2021-04-25 11:45:06,740] {taskinstance.py:1455} ERROR - 404 Not found: Cluster projects/spotimood-dev/regions/europe-west2/clusters/ephemeral-recent-played-spark-cluster-20210425
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/api_core/grpc_helpers.py", line 73, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/grpc/_channel.py", line 923, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/airflow/.local/lib/python3.6/site-packages/grpc/_channel.py", line 826, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.NOT_FOUND
+	details = "Not found: Cluster projects/spotimood-dev/regions/europe-west2/clusters/ephemeral-recent-played-spark-cluster-20210425"
+	debug_error_string = "{"created":"@1619351106.738744600","description":"Error received from peer ipv4:142.250.200.74:443","file":"src/core/lib/surface/call.cc","file_line":1067,"grpc_message":"Not found: Cluster projects/spotimood-dev/regions/europe-west2/clusters/ephemeral-recent-played-spark-cluster-20210425","grpc_status":5}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 849, in execute
+    metadata=self.metadata,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 425, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/hooks/dataproc.py", line 348, in delete_cluster
+    metadata=metadata,
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/cloud/dataproc_v1beta2/gapic/cluster_controller_client.py", line 604, in delete_cluster
+    request, retry=retry, timeout=timeout, metadata=metadata
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/api_core/gapic_v1/method.py", line 145, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/api_core/grpc_helpers.py", line 75, in error_remapped_callable
+    six.raise_from(exceptions.from_grpc_error(exc), exc)
+  File "<string>", line 3, in raise_from
+google.api_core.exceptions.NotFound: 404 Not found: Cluster projects/spotimood-dev/regions/europe-west2/clusters/ephemeral-recent-played-spark-cluster-20210425
+[2021-04-25 11:45:06,757] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=recent_played_ingestion, task_id=delete_cluster_dataproc, execution_date=20210425T100000, start_date=20210425T114505, end_date=20210425T114506
+[2021-04-25 11:45:06,821] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -1,0 +1,23 @@
+[2021-04-25 13:01:56,566] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T12:00:00+00:00 [queued]>
+[2021-04-25 13:01:56,623] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T12:00:00+00:00 [queued]>
+[2021-04-25 13:01:56,626] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 13:01:56,628] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-25 13:01:56,629] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 13:01:56,648] {taskinstance.py:1063} INFO - Executing <Task(PatchedDataprocDeleteClusterOperator): delete_cluster_dataproc> on 2021-04-25T12:00:00+00:00
+[2021-04-25 13:01:56,658] {standard_task_runner.py:52} INFO - Started process 1110 to run task
+[2021-04-25 13:01:56,665] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'recent_played_ingestion', 'delete_cluster_dataproc', '2021-04-25T12:00:00+00:00', '--job-id', '103', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/recent_played_ingestion.py', '--cfg-path', '/tmp/tmphlgfbvcl', '--error-file', '/tmp/tmpp5fywcjh']
+[2021-04-25 13:01:56,671] {standard_task_runner.py:77} INFO - Job 103: Subtask delete_cluster_dataproc
+[2021-04-25 13:01:56,775] {logging_mixin.py:104} INFO - Running <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T12:00:00+00:00 [running]> on host 67976f37379c
+[2021-04-25 13:01:56,900] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=recent_played_ingestion
+AIRFLOW_CTX_TASK_ID=delete_cluster_dataproc
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-25T12:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-25T12:00:00+00:00
+[2021-04-25 13:01:56,921] {dataproc.py:840} INFO - Deleting cluster: ephemeral-recent-played-spark-cluster-20210425
+[2021-04-25 13:02:16,941] {local_task_job.py:188} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2021-04-25 13:02:16,954] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 1110
+[2021-04-25 13:02:16,956] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2021-04-25 13:02:17,017] {process_utils.py:66} INFO - Process psutil.Process(pid=1110, status='terminated', exitcode=0, started='13:01:56') (1110) terminated with exit code 0

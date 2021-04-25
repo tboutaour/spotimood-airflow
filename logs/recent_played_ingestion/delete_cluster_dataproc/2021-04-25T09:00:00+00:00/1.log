@@ -1,0 +1,23 @@
+[2021-04-25 10:50:41,806] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T09:00:00+00:00 [queued]>
+[2021-04-25 10:50:41,847] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T09:00:00+00:00 [queued]>
+[2021-04-25 10:50:41,850] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 10:50:41,851] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-25 10:50:41,854] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 10:50:41,865] {taskinstance.py:1063} INFO - Executing <Task(PatchedDataprocDeleteClusterOperator): delete_cluster_dataproc> on 2021-04-25T09:00:00+00:00
+[2021-04-25 10:50:41,873] {standard_task_runner.py:52} INFO - Started process 441 to run task
+[2021-04-25 10:50:41,878] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'recent_played_ingestion', 'delete_cluster_dataproc', '2021-04-25T09:00:00+00:00', '--job-id', '75', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/recent_played_ingestion.py', '--cfg-path', '/tmp/tmpoesbssfe', '--error-file', '/tmp/tmp4w17ruh2']
+[2021-04-25 10:50:41,883] {standard_task_runner.py:77} INFO - Job 75: Subtask delete_cluster_dataproc
+[2021-04-25 10:50:41,939] {logging_mixin.py:104} INFO - Running <TaskInstance: recent_played_ingestion.delete_cluster_dataproc 2021-04-25T09:00:00+00:00 [running]> on host 67976f37379c
+[2021-04-25 10:50:41,986] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=recent_played_ingestion
+AIRFLOW_CTX_TASK_ID=delete_cluster_dataproc
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-25T09:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-25T09:00:00+00:00
+[2021-04-25 10:50:41,999] {dataproc.py:840} INFO - Deleting cluster: ephemeral-recent-played-spark-cluster-20210425
+[2021-04-25 10:51:09,975] {dataproc.py:852} INFO - Cluster deleted.
+[2021-04-25 10:51:09,992] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=recent_played_ingestion, task_id=delete_cluster_dataproc, execution_date=20210425T090000, start_date=20210425T105041, end_date=20210425T105109
+[2021-04-25 10:51:10,018] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-04-25 10:51:10,073] {local_task_job.py:146} INFO - Task exited with return code 0

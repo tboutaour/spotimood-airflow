@@ -8,7 +8,7 @@
     "num_workers": 0,
     "worker_machine_type": "n1-standard-2",
     "postgresql_jar_gcp_path": "gs://spotimood-application-dev/postgresql-42.2.14.jar",
-    "postgres_backend_host":  "localhost",
+    "postgres_backend_host":  "10.95.144.3",
     "postgres_backend_database": "postgres",
     "postgres_backend_port":  "5432",
     "postgres_backend_user": "postgres",

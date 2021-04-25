@@ -1,0 +1,24 @@
+[2021-04-25 13:02:57,013] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.run_recent_played_classification_pypark 2021-04-25T12:00:00+00:00 [queued]>
+[2021-04-25 13:02:57,065] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.run_recent_played_classification_pypark 2021-04-25T12:00:00+00:00 [queued]>
+[2021-04-25 13:02:57,066] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 13:02:57,068] {taskinstance.py:1043} INFO - Starting attempt 2 of 2
+[2021-04-25 13:02:57,069] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 13:02:57,086] {taskinstance.py:1063} INFO - Executing <Task(DataprocSubmitPySparkJobOperator): run_recent_played_classification_pypark> on 2021-04-25T12:00:00+00:00
+[2021-04-25 13:02:57,095] {standard_task_runner.py:52} INFO - Started process 1131 to run task
+[2021-04-25 13:02:57,106] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'recent_played_ingestion', 'run_recent_played_classification_pypark', '2021-04-25T12:00:00+00:00', '--job-id', '105', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/recent_played_ingestion.py', '--cfg-path', '/tmp/tmpfvpbe119', '--error-file', '/tmp/tmpv53rc13d']
+[2021-04-25 13:02:57,114] {standard_task_runner.py:77} INFO - Job 105: Subtask run_recent_played_classification_pypark
+[2021-04-25 13:02:57,233] {logging_mixin.py:104} INFO - Running <TaskInstance: recent_played_ingestion.run_recent_played_classification_pypark 2021-04-25T12:00:00+00:00 [running]> on host 67976f37379c
+[2021-04-25 13:02:57,354] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=recent_played_ingestion
+AIRFLOW_CTX_TASK_ID=run_recent_played_classification_pypark
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-25T12:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-25T12:00:00+00:00
+[2021-04-25 13:02:57,360] {dataproc.py:981} INFO - Submitting pyspark_job job run_recent_played_classification_pypark_20210425_c9855a21
+[2021-04-25 13:02:58,662] {dataproc.py:986} INFO - Job run_recent_played_classification_pypark_20210425_c9855a21 submitted successfully.
+[2021-04-25 13:02:58,663] {dataproc.py:989} INFO - Waiting for job run_recent_played_classification_pypark_20210425_c9855a21 to complete
+[2021-04-25 13:07:58,276] {dataproc.py:991} INFO - Job run_recent_played_classification_pypark_20210425_c9855a21 completed successfully.
+[2021-04-25 13:07:58,329] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=recent_played_ingestion, task_id=run_recent_played_classification_pypark, execution_date=20210425T120000, start_date=20210425T130257, end_date=20210425T130758
+[2021-04-25 13:07:58,526] {local_task_job.py:146} INFO - Task exited with return code 1

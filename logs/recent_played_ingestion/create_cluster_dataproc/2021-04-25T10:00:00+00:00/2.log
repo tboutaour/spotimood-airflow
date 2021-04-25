@@ -1,0 +1,22 @@
+[2021-04-25 11:52:52,202] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.create_cluster_dataproc 2021-04-25T10:00:00+00:00 [queued]>
+[2021-04-25 11:52:52,235] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.create_cluster_dataproc 2021-04-25T10:00:00+00:00 [queued]>
+[2021-04-25 11:52:52,236] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 11:52:52,237] {taskinstance.py:1043} INFO - Starting attempt 2 of 2
+[2021-04-25 11:52:52,238] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-25 11:52:52,248] {taskinstance.py:1063} INFO - Executing <Task(DataprocCreateClusterOperator): create_cluster_dataproc> on 2021-04-25T10:00:00+00:00
+[2021-04-25 11:52:52,254] {standard_task_runner.py:52} INFO - Started process 607 to run task
+[2021-04-25 11:52:52,258] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'recent_played_ingestion', 'create_cluster_dataproc', '2021-04-25T10:00:00+00:00', '--job-id', '81', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/recent_played_ingestion.py', '--cfg-path', '/tmp/tmpwq9cz9wi', '--error-file', '/tmp/tmp7vo4_x3g']
+[2021-04-25 11:52:52,262] {standard_task_runner.py:77} INFO - Job 81: Subtask create_cluster_dataproc
+[2021-04-25 11:52:52,317] {logging_mixin.py:104} INFO - Running <TaskInstance: recent_played_ingestion.create_cluster_dataproc 2021-04-25T10:00:00+00:00 [running]> on host 67976f37379c
+[2021-04-25 11:52:52,382] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=recent_played_ingestion
+AIRFLOW_CTX_TASK_ID=create_cluster_dataproc
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-25T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-25T10:00:00+00:00
+[2021-04-25 11:52:52,384] {dataproc.py:603} INFO - Creating cluster: ephemeral-recent-played-spark-cluster-20210425
+[2021-04-25 11:52:54,594] {dataproc.py:611} INFO - Cluster already exists.
+[2021-04-25 11:52:54,970] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=recent_played_ingestion, task_id=create_cluster_dataproc, execution_date=20210425T100000, start_date=20210425T115252, end_date=20210425T115254
+[2021-04-25 11:52:55,104] {local_task_job.py:146} INFO - Task exited with return code 1

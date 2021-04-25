@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.models import Variable, TaskInstance
+from airflow.utils.trigger_rule import TriggerRule
 from airflow.providers.google.cloud.operators.dataproc import DataprocCreateClusterOperator, \
     DataprocSubmitPySparkJobOperator, ClusterGenerator
 from operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDeleteClusterOperator
@@ -8,8 +9,8 @@ from operators.patched_dataproc_delete_cluster_operator import PatchedDataprocDe
 # Schedule time variables
 EXECUTION_DATE = '{{ ds }}'
 EXECUTION_DATE_NODASH = '{{ ds_nodash }}'
-START_DATETIME = '{{ }}'  # Start datetime
-END_DATETIME = '{{ }}'  # Start datetime + 1 hour
+START_DATETIME = '{{ execution_date }}'
+END_DATETIME = '{{ execution_date + macros.timedelta(hours=1) }}'
 
 # Project configuration
 GCS_APP_BUCKET = Variable.get('gcs_app_bucket')
@@ -31,7 +32,7 @@ PYSPARK_JOB = 'gs://' + GCS_APP_BUCKET + '/driver.py'
 DEFAULT_ARGS = {
     'wait_for_downstream': True,
     'depends_on_past': True,
-    'start_date': datetime(2021, 1, 31),
+    'start_date': datetime(2021, 4, 25, 8),
     'project_id': GCP_PROJECT,
     'email_on_failure': False,
 }
@@ -58,15 +59,16 @@ DATA_LANDING = f"gs://{GCS_LANDING_BUCKET}/playlist_information.avro"
 DATA_LANDING_RECENT_PLAYED = f"gs://{GCS_LANDING_BUCKET}/recent_played.avro"
 SONG_CLASSIFIED_TABLE = "spotify_user_playlist_songs_classified"
 RECENT_PLAYED_CLASSIFIED_TABLE = "spotify_user_recent_played_songs_classified"
-MODEL_PATH = f"gs://{GCS_LANDING_BUCKET}/model/ml_model.sav"
+MODEL_PATH = f"{GCS_LANDING_BUCKET}/model/ml_model.sav"
 
 CLUSTER_DATA = ClusterGenerator(num_workers=NUM_WORKERS,
                                 project_id=GCP_PROJECT,
                                 image_version='1.5-debian10',
                                 master_machine_type=MASTER_MACHINE_TYPE,
                                 worker_machine_type=WORKER_MACHINE_TYPE,
+                                network_uri='default',
                                 properties={"spark-env:GCS_LANDING_BUCKET": GCS_LANDING_BUCKET,
-                                            "spark-env:BQ_PROJECT_ID": GCP_PROJECT,
+                                            "spark-env:GCS_PROJECT_ID": GCP_PROJECT,
                                             "spark-env:POSTGRES_BACKEND_HOST": POSTGRES_BACKEND_HOST,
                                             "spark-env:POSTGRES_BACKEND_DATABASE": POSTGRES_BACKEND_DATABASE,
                                             "spark-env:POSTGRES_BACKEND_PORT": POSTGRES_BACKEND_PORT,
@@ -83,7 +85,7 @@ CLUSTER_DATA = ClusterGenerator(num_workers=NUM_WORKERS,
                                             "spark-env:GCS_TEMP_CHECKPOINT": GCS_TEMP_CHECKPOINT
                                             },
                                 service_account_scopes=["https://www.googleapis.com/auth/cloud-platform"],
-                                metadata={"PIP_PACKAGES": "google-cloud-storage==1.29.0 six==1.15.0"},
+                                metadata={"PIP_PACKAGES": "google-cloud-storage==1.29.0 six==1.15.0 spotipy psycopg2-binary py4j==0.10.9 numpy==1.19.5 pandas scikit-learn pyspark==3.0.1 pyarrow==2.0.0 google gcsfs"},
                                 init_actions_uris=[f"gs://{GCS_APP_BUCKET}/pip_install.sh"],
                                 idle_delete_ttl=600,
                                 ).make()
@@ -105,11 +107,11 @@ submit_ingestion_job = DataprocSubmitPySparkJobOperator(
     region=GCE_REGION,
     dataproc_properties={'spark.jars.packages': 'org.apache.spark:spark-avro_2.12:2.4.5',
                          'spark.jars': GCS_POSTGRESQL_JAR_PATH},
-    pyfiles=[f"gs://{GCS_APP_BUCKET}/reporting_online-0.1.0_SNAPSHOT-py3.7.egg"],
+    pyfiles=[f"gs://{GCS_APP_BUCKET}/spotify_mood-0.1.0_SNAPSHOT-py3.7.egg"],
     arguments=["spotify_mood.main.spotify_recent_played_data_ingestion_main.py",
-               "--start-day",
+               "--start-datetime",
                START_DATETIME,
-               "--end-day",
+               "--end-datetime",
                END_DATETIME],
     dag=dag)
 
@@ -119,12 +121,13 @@ submit_classification_job = DataprocSubmitPySparkJobOperator(
     main=PYSPARK_JOB,
     cluster_name=CLUSTER_NAME,
     region=GCE_REGION,
-    dataproc_properties={'spark.jars.packages': 'org.apache.spark:spark-avro_2.12:2.4.5'},
-    pyfiles=[f"gs://{GCS_APP_BUCKET}/reporting_online-0.1.0_SNAPSHOT-py3.7.egg"],
+    dataproc_properties={'spark.jars.packages': 'org.apache.spark:spark-avro_2.12:2.4.5',
+                         'spark.jars': GCS_POSTGRESQL_JAR_PATH},
+    pyfiles=[f"gs://{GCS_APP_BUCKET}/spotify_mood-0.1.0_SNAPSHOT-py3.7.egg"],
     arguments=["spotify_mood.main.hourly_recent_played_playlist_mood_tracker_main.py",
-               "--start-day",
+               "--start-datetime",
                START_DATETIME,
-               "--end-day",
+               "--end-datetime",
                END_DATETIME],
     dag=dag)
 
@@ -133,6 +136,7 @@ delete_cluster = PatchedDataprocDeleteClusterOperator(
     task_id='delete_cluster_dataproc',
     cluster_name=CLUSTER_NAME,
     region=GCE_REGION,
-    dag=dag)
+    dag=dag,
+    trigger_rule=TriggerRule.ALL_DONE)
 
 create_cluster >> submit_ingestion_job >> submit_classification_job >> delete_cluster

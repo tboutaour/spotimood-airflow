@@ -1,0 +1,179 @@
+[2021-04-23 16:56:03,364] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.run_recent_played_ingestion_pypark 2021-04-23T15:00:00+00:00 [queued]>
+[2021-04-23 16:56:03,389] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: recent_played_ingestion.run_recent_played_ingestion_pypark 2021-04-23T15:00:00+00:00 [queued]>
+[2021-04-23 16:56:03,392] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-23 16:56:03,393] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-23 16:56:03,394] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-23 16:56:03,405] {taskinstance.py:1063} INFO - Executing <Task(DataprocSubmitPySparkJobOperator): run_recent_played_ingestion_pypark> on 2021-04-23T15:00:00+00:00
+[2021-04-23 16:56:03,410] {standard_task_runner.py:52} INFO - Started process 127 to run task
+[2021-04-23 16:56:03,415] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'recent_played_ingestion', 'run_recent_played_ingestion_pypark', '2021-04-23T15:00:00+00:00', '--job-id', '17', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/recent_played_ingestion.py', '--cfg-path', '/tmp/tmpvllplmsq', '--error-file', '/tmp/tmprk78fnqj']
+[2021-04-23 16:56:03,419] {standard_task_runner.py:77} INFO - Job 17: Subtask run_recent_played_ingestion_pypark
+[2021-04-23 16:56:03,489] {logging_mixin.py:104} INFO - Running <TaskInstance: recent_played_ingestion.run_recent_played_ingestion_pypark 2021-04-23T15:00:00+00:00 [running]> on host 760ffd3d790b
+[2021-04-23 16:56:03,588] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=recent_played_ingestion
+AIRFLOW_CTX_TASK_ID=run_recent_played_ingestion_pypark
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-23T15:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-23T15:00:00+00:00
+[2021-04-23 16:56:03,598] {dataproc.py:981} INFO - Submitting pyspark_job job run_recent_played_ingestion_pypark_20210423_f5d34077
+[2021-04-23 16:56:04,236] {dataproc.py:986} INFO - Job run_recent_played_ingestion_pypark_20210423_f5d34077 submitted successfully.
+[2021-04-23 16:56:04,237] {dataproc.py:989} INFO - Waiting for job run_recent_played_ingestion_pypark_20210423_f5d34077 to complete
+[2021-04-23 16:56:45,540] {taskinstance.py:1455} ERROR - Job failed:
+reference {
+  project_id: "spotimood-dev"
+  job_id: "run_recent_played_ingestion_pypark_20210423_f5d34077"
+}
+placement {
+  cluster_name: "ephemeral-recent-played-spark-cluster-20210423"
+  cluster_uuid: "8d07f6d5-b8cb-4178-b791-0659bfc3a6a6"
+}
+pyspark_job {
+  main_python_file_uri: "gs://spotimood-application-dev/driver.py"
+  args: "spotify_mood.main.spotify_recent_played_data_ingestion_main.py"
+  args: "--start-datetime"
+  args: "2021-04-23T15:00:00+00:00"
+  args: "--end-datetime"
+  args: "2021-04-23T16:00:00+00:00"
+  python_file_uris: "gs://spotimood-application-dev/spotify_mood-0.1.0_SNAPSHOT-py3.7.egg"
+  properties {
+    key: "spark.jars"
+    value: "gs://spotimood-application-dev/postgresql-42.2.14.jar"
+  }
+  properties {
+    key: "spark.jars.packages"
+    value: "org.apache.spark:spark-avro_2.12:2.4.5"
+  }
+}
+status {
+  state: ERROR
+  details: "Google Cloud Dataproc Agent reports job failure. If logs are available, they can be found at:\nhttps://console.cloud.google.com/dataproc/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077?project=spotimood-dev&region=europe-west2\ngcloud dataproc jobs wait \'run_recent_played_ingestion_pypark_20210423_f5d34077\' --region \'europe-west2\' --project \'spotimood-dev\'\nhttps://console.cloud.google.com/storage/browser/dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/\ngs://dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/driveroutput"
+  state_start_time {
+    seconds: 1619197001
+    nanos: 374000000
+  }
+}
+yarn_applications {
+  name: "recent-played-pipeline"
+  state: FINISHED
+  progress: 1.0
+  tracking_url: "http://ephemeral-recent-played-spark-cluster-20210423-m:8088/proxy/application_1619196822677_0001/"
+}
+submitted_by: "1086527958588-compute@developer.gserviceaccount.com"
+status_history {
+  state: PENDING
+  state_start_time {
+    seconds: 1619196964
+    nanos: 516000000
+  }
+}
+status_history {
+  state: SETUP_DONE
+  state_start_time {
+    seconds: 1619196964
+    nanos: 540000000
+  }
+}
+status_history {
+  state: RUNNING
+  state_start_time {
+    seconds: 1619196964
+    nanos: 807000000
+  }
+}
+driver_control_files_uri: "gs://dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/"
+driver_output_resource_uri: "gs://dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/driveroutput"
+labels {
+  key: "airflow-version"
+  value: "v2-0-1"
+}
+job_uuid: "306e4327-5673-46d5-bb3e-1b48dc83d9dd"
+done: true
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1545, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 990, in execute
+    self.hook.wait_for_job(job_id=job_id, location=self.region, project_id=self.project_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 425, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/hooks/dataproc.py", line 734, in wait_for_job
+    raise AirflowException(f'Job failed:\n{job}')
+airflow.exceptions.AirflowException: Job failed:
+reference {
+  project_id: "spotimood-dev"
+  job_id: "run_recent_played_ingestion_pypark_20210423_f5d34077"
+}
+placement {
+  cluster_name: "ephemeral-recent-played-spark-cluster-20210423"
+  cluster_uuid: "8d07f6d5-b8cb-4178-b791-0659bfc3a6a6"
+}
+pyspark_job {
+  main_python_file_uri: "gs://spotimood-application-dev/driver.py"
+  args: "spotify_mood.main.spotify_recent_played_data_ingestion_main.py"
+  args: "--start-datetime"
+  args: "2021-04-23T15:00:00+00:00"
+  args: "--end-datetime"
+  args: "2021-04-23T16:00:00+00:00"
+  python_file_uris: "gs://spotimood-application-dev/spotify_mood-0.1.0_SNAPSHOT-py3.7.egg"
+  properties {
+    key: "spark.jars"
+    value: "gs://spotimood-application-dev/postgresql-42.2.14.jar"
+  }
+  properties {
+    key: "spark.jars.packages"
+    value: "org.apache.spark:spark-avro_2.12:2.4.5"
+  }
+}
+status {
+  state: ERROR
+  details: "Google Cloud Dataproc Agent reports job failure. If logs are available, they can be found at:\nhttps://console.cloud.google.com/dataproc/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077?project=spotimood-dev&region=europe-west2\ngcloud dataproc jobs wait \'run_recent_played_ingestion_pypark_20210423_f5d34077\' --region \'europe-west2\' --project \'spotimood-dev\'\nhttps://console.cloud.google.com/storage/browser/dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/\ngs://dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/driveroutput"
+  state_start_time {
+    seconds: 1619197001
+    nanos: 374000000
+  }
+}
+yarn_applications {
+  name: "recent-played-pipeline"
+  state: FINISHED
+  progress: 1.0
+  tracking_url: "http://ephemeral-recent-played-spark-cluster-20210423-m:8088/proxy/application_1619196822677_0001/"
+}
+submitted_by: "1086527958588-compute@developer.gserviceaccount.com"
+status_history {
+  state: PENDING
+  state_start_time {
+    seconds: 1619196964
+    nanos: 516000000
+  }
+}
+status_history {
+  state: SETUP_DONE
+  state_start_time {
+    seconds: 1619196964
+    nanos: 540000000
+  }
+}
+status_history {
+  state: RUNNING
+  state_start_time {
+    seconds: 1619196964
+    nanos: 807000000
+  }
+}
+driver_control_files_uri: "gs://dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/"
+driver_output_resource_uri: "gs://dataproc-staging-europe-west2-1086527958588-jcvhexoj/google-cloud-dataproc-metainfo/8d07f6d5-b8cb-4178-b791-0659bfc3a6a6/jobs/run_recent_played_ingestion_pypark_20210423_f5d34077/driveroutput"
+labels {
+  key: "airflow-version"
+  value: "v2-0-1"
+}
+job_uuid: "306e4327-5673-46d5-bb3e-1b48dc83d9dd"
+done: true
+
+[2021-04-23 16:56:45,581] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=recent_played_ingestion, task_id=run_recent_played_ingestion_pypark, execution_date=20210423T150000, start_date=20210423T165603, end_date=20210423T165645
+[2021-04-23 16:56:45,662] {local_task_job.py:146} INFO - Task exited with return code 1
